@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper Scissor</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./play.js"></script>
+
+</head>
+
+
+<body>
+<div class="mainback">
+    <div id="uppermost">
+        <div class="left">
+            <h1>ROCK <br>PAPER <br>SCISSORS</h1>
+        </div>
+        <div class="right">
+            <div class="score">Score <br><h1 id="scores">00</h1></div>
+            
+            
+        </div>
+    </div>
+
+
+
+<div class="cent">
+    <div id="userside">
+    <h1>Shah Picked</h1>
+    <img src="./asset/icon-rock.svg" alt="User Selection" id="userselected">
+</div>
+    <div id="resbut"><h1 id="announcement">Default Text</h1>
+    <button id="playgain" onclick="agains()">Play again</button>
+</div>
+    <div id="central">
+        <img src="asset/icon-paper.svg" alt="Paper image" id="P"  onclick="play1(id)">
+        <img src="asset/icon-scissors.svg" alt="Scissor image" id="S" onclick="play1(id)">
+        <br>
+        <img src="asset/icon-rock.svg" alt="Rock image" id="R" onclick="play1(id)">
+    </div>
+<div id="cpuside">
+    <h1>CPU Picked</h1>
+    <img id="cpuselected" src="./asset/icon-paper.svg" alt="Cpu Selection">
+    </div>
+</div>
+
+
+    <div class="lowest">
+        <button onclick="popup_gen()">R U L E S</button>
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

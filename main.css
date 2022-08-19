@@ -1,0 +1,192 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  color: cadetblue;
+  font: barlow;
+}
+
+.mainback {
+  font-family: 'Barlow Condensed', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  background: radial-gradient(#1f3756, #141539);
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.mainback #uppermost {
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  margin-top: 50px;
+  border: 2px solid white;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.mainback #uppermost .right {
+  color: #2a46c0;
+}
+
+.mainback #uppermost .right .score {
+  vertical-align: middle;
+  text-align: center;
+  padding: 1rem 0rem;
+  width: 150px;
+  height: 100px;
+  background: white;
+  border-radius: 8px;
+}
+
+.mainback .cent {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainback .cent #userside, .mainback .cent #cpuside {
+  display: none;
+  text-align: center;
+  line-height: 100px;
+  margin: 0rem 1.3rem;
+}
+
+.mainback .cent #userselected, .mainback .cent #cpuselected {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 20px;
+  border-color: #2a46c0;
+  width: 200px;
+  height: 200px;
+}
+
+.mainback .cent #resbut {
+  display: none;
+  padding: 6rem;
+}
+
+.mainback .cent #resbut #announcement {
+  margin-bottom: 25px;
+  color: #f02525;
+  text-align: center;
+}
+
+.mainback .cent #resbut button {
+  padding: 1rem 3rem;
+  border-radius: 6px;
+  background: white;
+  color: #c55555;
+  outline: none;
+  border: none;
+}
+
+.mainback .cent #resbut button:hover {
+  cursor: pointer;
+  opacity: 98%;
+}
+
+.mainback .cent #central {
+  margin-top: 2rem;
+  max-height: 400px;
+  min-height: 320px;
+  width: 360px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: url(asset/bg-triangle.svg) no-repeat;
+  background-position: 40px 50px;
+}
+
+.mainback .cent #central #P:hover, .mainback .cent #central #R:hover, .mainback .cent #central #S:hover {
+  opacity: 90%;
+  cursor: pointer;
+}
+
+.mainback .cent #central #P {
+  border-style: solid;
+  border-width: 9px;
+  border-color: yellow;
+  width: 140px;
+  height: 140px;
+}
+
+.mainback .cent #central #S {
+  border-color: red;
+  border-width: 9px;
+  border-style: solid;
+  width: 140px;
+  height: 140px;
+  position: relative;
+  float: right;
+}
+
+.mainback .cent #central #R {
+  border-style: solid;
+  border-width: 9px;
+  border-color: #2a46c0;
+  width: 140px;
+  height: 140px;
+  right: 0%;
+  margin-top: 40px;
+  margin-left: 35%;
+}
+
+.mainback .cent #central img {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 50%;
+  border-width: 6px;
+}
+
+.mainback .lowest {
+  margin: 2rem 1rem;
+  text-align: right;
+  color: white;
+}
+
+.mainback .lowest button {
+  border: 1px solid white;
+  padding: 0.3rem 2rem;
+  outline: none;
+  background: inherit;
+  color: #606d60;
+  border-radius: 9px;
+}
+
+.mainback .lowest button:hover {
+  cursor: pointer;
+  opacity: 70%;
+}
+
+@media screen and (max-width: 375px) {
+  .mainback .uppermost {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

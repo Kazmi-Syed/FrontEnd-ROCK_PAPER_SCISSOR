@@ -1,0 +1,165 @@
+@import "variables";
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    color: cadetblue;
+    font: barlow;
+}
+
+.mainback{
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+
+    height: 100vh;
+    background: radial-gradient( rgb(31,55,86), rgb(20, 21, 57)); 
+    align-content: center;
+
+    
+    #uppermost{
+        border-radius: 12px;
+        padding: 2rem 3rem;
+        margin-top: 50px;
+        border: 2px solid white;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-self: center;
+
+
+        .right{
+            
+            color: $ScoreText;
+            .score{
+                vertical-align: middle;
+                
+                text-align: center;
+                padding: 1rem 0rem;
+                width: 150px;
+                height: 100px;
+                background: white;
+                border-radius: 8px;
+            }
+        }
+    }
+.cent{
+    justify-content: center;
+    display: flex;
+    #userside ,#cpuside{
+        display: none;
+        text-align: center;
+        line-height: 100px;
+        margin: 0rem 1.3rem;
+    }
+    #userselected,#cpuselected{
+        background-color: white;
+        padding: 2rem;
+        border-radius:50%;
+        border-style: solid;
+        border-width: 20px;
+        border-color: $ScoreText;
+        width: 200px; 
+        height: 200px;
+    }
+
+
+    #resbut{
+        #announcement{
+            margin-bottom: 25px;
+            color: rgb(240, 37, 37);
+            text-align: center;
+        }
+        display: none;
+        padding: 6rem;
+        button {
+            padding: 1rem 3rem;
+            border-radius: 6px;
+            background: white;
+            color: rgb(197, 85, 85);
+            outline:none;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+            opacity: 98%;
+        }
+    }
+    
+    #central{
+        
+        margin-top: 2rem;
+        max-height: 400px;
+        min-height: 320px;
+        width: 360px;
+        align-self: center;
+        background: url(asset/bg-triangle.svg) no-repeat;
+        background-position: 40px 50px;
+        #P:hover,#R:hover,#S:hover{
+            opacity: 90%;
+            cursor: pointer;
+        }
+        #P{
+            border-style: solid;
+            border-width: 9px;
+            border-color: yellow; 
+            width: 140px; 
+            height: 140px;   
+        }
+
+        #S{
+            border-color: red;
+            border-width: 9px;
+            border-style: solid;
+            width: 140px; 
+            height: 140px;
+            position: relative;
+            float: right;
+        }
+
+        #R{
+            border-style: solid;
+            border-width: 9px;
+            border-color: $ScoreText;
+            width: 140px; 
+            height: 140px;
+            right: 0%;
+
+            margin-top: 40px;
+            margin-left: 35%;
+        }
+
+        img{
+            background-color: white;
+            padding: 2rem;
+            border-radius:50%;
+            border-width: 6px;
+        }
+    
+    }
+}
+    .lowest{
+        margin: 2rem 1rem;
+        text-align: right;
+        color: white;
+     button{
+         border: 1px solid white;
+         padding: 0.3rem 2rem ;
+         outline: none;
+         background: inherit ;
+         color: rgb(96, 109, 96);
+         border-radius: 9px;
+     
+        }
+    button:hover{
+            cursor: pointer;
+            opacity: 70%;
+        }
+    }
+}
+
